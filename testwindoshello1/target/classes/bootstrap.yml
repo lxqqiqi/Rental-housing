@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      uri: http://172.16.0.128:8888
+      profile: dev
+      name: testwindoshello1
+#eureka:
+#  instance:
+#    hostname: ${spring.cloud.client.ipAddress}
+#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#    preferIpAddress: true
