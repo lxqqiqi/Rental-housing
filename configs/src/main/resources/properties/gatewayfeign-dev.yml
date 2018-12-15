@@ -1,0 +1,29 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.16.0.128:8761/eureka
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+server:
+  port: 8087
+spring:
+  application:
+    name: gatewayfeign
+zuul:
+  routes:
+    feigns:
+      #      指定请求基础地址，其中 API 可以是任何字符。
+      path: /feigns/**
+      #     转发到的服务 ID，也就是指定服务的 application.name，上述实例的含
+      #义表示只要包含  /api/ 的地址，都自动转发到 eurekaclient 的服务去。
+      serviceId: feign
+
+#  host:
+#    max-per-route-connections: 500
+#    socket-timeout-millis: 60000
+#    connect-timeout-millis: 60000
+#
+#ribbon:
+#  eureka:
+#    enabled: true

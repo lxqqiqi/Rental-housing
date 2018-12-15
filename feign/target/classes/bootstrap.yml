@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: http://172.16.0.128:8888
+      profile: dev
+      name: feign

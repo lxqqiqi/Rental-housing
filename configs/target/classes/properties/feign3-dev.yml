@@ -1,0 +1,16 @@
+server:
+  port: 8110
+spring:
+  application:
+    name: feignserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.0.128:8761/eureka/
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    #开启熔断器
+feign:
+  hystrix:
+    enabled: true

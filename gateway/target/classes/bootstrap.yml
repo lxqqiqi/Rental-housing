@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://172.16.0.128:8888
+      profile: dev
+      name: gateway
+
+#  zuul.routes.api-a-url.url=http://localhost:2222/
