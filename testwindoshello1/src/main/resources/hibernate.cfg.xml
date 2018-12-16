@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--数据库连接url配置-->
+    <property name="connection.url">jdbc:mysql://172.16.0.234:3306/crebas</property>
+    <!--数据库驱动配置-->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <!--数据库用户名配置-->
+    <!--数据库密码配置-->
+    <mapping resource="com/example/testwindoshello/entity/FwHouseinfo.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwHouseinfo"/>
+    <mapping resource="com/example/testwindoshello/entity/FwHouseinfoHistory.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwHouseinfoHistory"/>
+    <mapping resource="com/example/testwindoshello/entity/FwImg.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwImg"/>
+    <mapping resource="com/example/testwindoshello/entity/FwMessage.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwMessage"/>
+    <mapping resource="com/example/testwindoshello/entity/FwMessagedetail.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwMessagedetail"/>
+    <mapping resource="com/example/testwindoshello/entity/FwResident.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwResident"/>
+    <mapping resource="com/example/testwindoshello/entity/FwResidentHistory.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwResidentHistory"/>
+    <mapping resource="com/example/testwindoshello/entity/FwScoreinfo.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwScoreinfo"/>
+    <mapping resource="com/example/testwindoshello/entity/FwUser.hbm.xml"/>
+    <mapping class="com.example.testwindoshello.entity.FwUser"/>
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
