@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.testwindoshello.entity.FwHouseinfo" table="fw_houseinfo" schema="crebas">
+        <id name="houseinfoid" column="houseinfoid"/>
+        <property name="userid" column="userid"/>
+        <property name="housedeclareid" column="housedeclareid"/>
+        <property name="systemid" column="systemid"/>
+        <property name="islast" column="islast"/>
+        <property name="idsyfw" column="idsyfw"/>
+        <property name="lvfwlbdm" column="lvfwlbdm"/>
+        <property name="lvfwytdm" column="lvfwytdm"/>
+        <property name="lvfwcqxzzldm" column="lvfwcqxzzldm"/>
+        <property name="lvczwbs" column="lvczwbs"/>
+        <property name="lvfwczyt" column="lvfwczyt"/>
+        <property name="lvfwczmj" column="lvfwczmj"/>
+        <property name="lvfwczjs" column="lvfwczjs"/>
+        <property name="lvfzxm" column="lvfzxm"/>
+        <property name="lvfzgmsfhm" column="lvfzgmsfhm"/>
+        <property name="lvfzlxdh" column="lvfzlxdh"/>
+        <property name="lvtgrxm" column="lvtgrxm"/>
+        <property name="lvtgrgmsfhm" column="lvtgrgmsfhm"/>
+        <property name="lvtgrlxdh" column="lvtgrlxdh"/>
+        <property name="wtglyxm" column="wtglyxm"/>
+        <property name="wtglygmsfhm" column="wtglygmsfhm"/>
+        <property name="wtglylxdh" column="wtglylxdh"/>
+        <property name="ifverify" column="ifverify"/>
+        <property name="verifytime" column="verifytime"/>
+        <property name="verifyperson" column="verifyperson"/>
+        <property name="verifydesc" column="verifydesc"/>
+        <property name="orgid" column="orgid"/>
+        <property name="remark" column="remark"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.testwindoshello.entity.FwUser" table="fw_user" schema="crebas">
+        <id name="userid" column="userid"/>
+        <property name="username" column="username"/>
+        <property name="sfzhm" column="sfzhm"/>
+        <property name="xm" column="xm"/>
+        <property name="sjhm" column="sjhm"/>
+        <property name="zcsj" column="zcsj"/>
+        <property name="openid" column="openid"/>
+        <property name="unionid" column="unionid"/>
+        <property name="wxhm" column="wxhm"/>
+        <property name="yhzt" column="yhzt"/>
+        <property name="xb" column="xb"/>
+        <property name="mz" column="mz"/>
+        <property name="csrq" column="csrq"/>
+        <property name="hjdz" column="hjdz"/>
+        <property name="pfdj" column="pfdj"/>
+        <property name="dqjf" column="dqjf"/>
+    </class>
+</hibernate-mapping>

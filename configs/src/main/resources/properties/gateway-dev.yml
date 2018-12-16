@@ -10,6 +10,9 @@ server:
 spring:
   application:
     name: gateway
+logging:
+  level:
+    root: debug
 #zuul:
 #  routes:
 #    api:

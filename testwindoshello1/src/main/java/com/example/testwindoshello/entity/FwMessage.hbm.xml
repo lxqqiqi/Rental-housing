@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.testwindoshello.entity.FwMessage" table="fw_message" schema="crebas">
+        <id name="messageid" column="messageid"/>
+        <property name="userid" column="userid"/>
+        <property name="messagetype" column="messagetype"/>
+        <property name="messagetime" column="messagetime"/>
+        <property name="title" column="title"/>
+        <property name="ifread" column="ifread"/>
+        <property name="readtime" column="readtime"/>
+        <property name="eventid" column="eventid"/>
+    </class>
+</hibernate-mapping>

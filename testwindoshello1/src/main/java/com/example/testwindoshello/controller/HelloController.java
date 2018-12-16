@@ -2,7 +2,7 @@ package com.example.testwindoshello.controller;
 
 import com.example.testwindoshello.model.Preventsql;
 import com.example.testwindoshello.model.Status;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 @RequestMapping("/hello")
-@Slf4j
+//@Slf4j
 public class HelloController {
     @Value("${server.port}")
     private int port;

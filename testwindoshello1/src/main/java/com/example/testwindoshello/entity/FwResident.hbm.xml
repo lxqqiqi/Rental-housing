@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.testwindoshello.entity.FwResident" table="fw_resident" schema="crebas">
+        <id name="residentid" column="residentid"/>
+        <property name="idsyrk" column="idsyrk"/>
+        <property name="lvrylx" column="lvrylx"/>
+        <property name="lvxm" column="lvxm"/>
+        <property name="lvzjhm" column="lvzjhm"/>
+        <property name="lvzjzl" column="lvzjzl"/>
+        <property name="lvgjhdqdm" column="lvgjhdqdm"/>
+        <property name="lvywx" column="lvywx"/>
+        <property name="lvywm" column="lvywm"/>
+        <property name="lvxbdm" column="lvxbdm"/>
+        <property name="lvcsrq" column="lvcsrq"/>
+        <property name="hjdz" column="hjdz"/>
+        <property name="checkindate" column="checkindate"/>
+        <property name="leavedate" column="leavedate"/>
+        <property name="lvlxdh" column="lvlxdh"/>
+        <property name="systemid" column="systemid"/>
+        <property name="idsyfw" column="idsyfw"/>
+        <property name="djsj" column="djsj"/>
+        <property name="houseinfoid" column="houseinfoid"/>
+    </class>
+</hibernate-mapping>
