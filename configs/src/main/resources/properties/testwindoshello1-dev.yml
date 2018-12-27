@@ -14,7 +14,7 @@ eureka:
       defaultZone: http://172.16.0.128:8761/eureka
 spring:
   application:
-    name: hello3
+    name: housing3
     #新加的验证
   datasource:
     url: jdbc:mysql://172.16.0.234:3306/crebas?useUnicode=true&characterEncoding=UTF-8&useSSL=true
@@ -25,8 +25,9 @@ spring:
     database: mysql
     show-sql: true
     properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      ddl-auto: update
   freemarker:
     charset: UTF-8
 mybatis:
@@ -40,3 +41,12 @@ mybatis:
 logging:
   level:
     root: debug
+redis:
+  host: 172.16.0.128
+  port: 6369
+  pool:
+    max-idle: 20
+    min-idle: 1
+    max-active: 20
+    max-wait: 60000
+  database: 0 #默认索引为0的数据库
