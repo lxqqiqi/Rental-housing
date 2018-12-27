@@ -27,7 +27,7 @@ public class PermissionsFilter extends ZuulFilter {
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletRequest request = requestContext.getRequest();
 //在控制台打印访问的路径
-//        System.out.println(request.getRequestURI());
+        System.out.println(request.getRequestURI());
         TypeCode typeCode = new TypeCode();
 
         int type = typeCode.getType();
@@ -36,14 +36,18 @@ public class PermissionsFilter extends ZuulFilter {
         } else {
 
             //需要权限校验URL
-            if ("/balance/hello/hello/test".equalsIgnoreCase(request.getRequestURI())) {
+            if ("/hello2/hello/test".equalsIgnoreCase(request.getRequestURI())) {
                 return true;
+            }
+
 //        } else if ("/apigateway/order/api/v1/order/list".equalsIgnoreCase(request.getRequestURI())) {
 //            return true;
 //        } else if ("/apigateway/order/api/v1/order/find".equalsIgnoreCase(request.getRequestURI())) {
 //            return true;
+//            }
+            else {
+                return false;
             }
-            return false;
         }
     }
 

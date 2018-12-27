@@ -54,7 +54,7 @@ public class ApiFallbackProvider implements FallbackProvider {
             public InputStream getBody() throws IOException {
                 JSONObject r = new JSONObject();
                 r.put("state","9999");
-                r.put("msg","系统错误，请求失败1");
+                r.put("msg","系统错误，请求失败");
 
                 return new ByteArrayInputStream(r.toJSONString().getBytes("UTF-8"));
             }
